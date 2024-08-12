@@ -5,7 +5,6 @@ audio = AudioSegment.from_file('song.mp3')
 
 # Menyimpan file audio
 audio.export('result.mp3', format='mp3')
-
 # Memotong 10 detik pertama
 clipped_audio = audio[:10000]  # 10 detik pertama
 clipped_audio.export('clipped_result.mp3', format='mp3')

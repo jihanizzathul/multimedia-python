@@ -3,8 +3,6 @@ from PIL import Image
 # Memuat gambar
 image = Image.open('bunga.jpg')
 
-# Menyimpan gambar
-image.save('result.jpg')
 
 cropped_image = image.crop((10, 10, 200, 200))
 cropped_image.save('cropped_result.jpg')
@@ -17,4 +15,6 @@ from PIL import ImageFilter
 
 filtered_image = resized_image.filter(ImageFilter.BLUR)
 filtered_image.save('filtered_result.jpg')
+
+image.save('result.jpg')
 
